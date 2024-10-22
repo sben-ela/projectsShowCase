@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/projectsShowCase/static/css/main.9b2c8df5.css",
-    "main.js": "/projectsShowCase/static/js/main.d215c891.js",
+    "main.css": "/projectsShowCase/static/css/main.645efcf1.css",
+    "main.js": "/projectsShowCase/static/js/main.54136735.js",
     "static/media/project4.jpg": "/projectsShowCase/static/media/project4.a7b7ed11daa072b234eb.jpg",
     "static/media/project3.jpg": "/projectsShowCase/static/media/project3.03535c34c110b7ea292b.jpg",
     "static/media/project5.jpg": "/projectsShowCase/static/media/project5.f78aa3fd070fc4dd0bd1.jpg",
@@ -10,11 +10,11 @@
     "static/media/project6.jpg": "/projectsShowCase/static/media/project6.a22c939898d6c4613b65.jpg",
     "static/media/revicons.woff": "/projectsShowCase/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/projectsShowCase/index.html",
-    "main.9b2c8df5.css.map": "/projectsShowCase/static/css/main.9b2c8df5.css.map",
-    "main.d215c891.js.map": "/projectsShowCase/static/js/main.d215c891.js.map"
+    "main.645efcf1.css.map": "/projectsShowCase/static/css/main.645efcf1.css.map",
+    "main.54136735.js.map": "/projectsShowCase/static/js/main.54136735.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b2c8df5.css",
-    "static/js/main.d215c891.js"
+    "static/css/main.645efcf1.css",
+    "static/js/main.54136735.js"
   ]
 }
