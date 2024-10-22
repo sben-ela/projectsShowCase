@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/projectsShowCase/static/css/main.74d5ab20.css",
-    "main.js": "/projectsShowCase/static/js/main.a49fdc02.js",
-    "static/media/project2.jpg": "/projectsShowCase/static/media/project2.5fae296d371cc56cd98a.jpg",
+    "main.css": "/projectsShowCase/static/css/main.9b2c8df5.css",
+    "main.js": "/projectsShowCase/static/js/main.d215c891.js",
     "static/media/project4.jpg": "/projectsShowCase/static/media/project4.a7b7ed11daa072b234eb.jpg",
     "static/media/project3.jpg": "/projectsShowCase/static/media/project3.03535c34c110b7ea292b.jpg",
     "static/media/project5.jpg": "/projectsShowCase/static/media/project5.f78aa3fd070fc4dd0bd1.jpg",
+    "static/media/revicons.eot": "/projectsShowCase/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/projectsShowCase/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/project6.jpg": "/projectsShowCase/static/media/project6.a22c939898d6c4613b65.jpg",
+    "static/media/revicons.woff": "/projectsShowCase/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/projectsShowCase/index.html",
-    "main.74d5ab20.css.map": "/projectsShowCase/static/css/main.74d5ab20.css.map",
-    "main.a49fdc02.js.map": "/projectsShowCase/static/js/main.a49fdc02.js.map"
+    "main.9b2c8df5.css.map": "/projectsShowCase/static/css/main.9b2c8df5.css.map",
+    "main.d215c891.js.map": "/projectsShowCase/static/js/main.d215c891.js.map"
   },
   "entrypoints": [
-    "static/css/main.74d5ab20.css",
-    "static/js/main.a49fdc02.js"
+    "static/css/main.9b2c8df5.css",
+    "static/js/main.d215c891.js"
   ]
 }
