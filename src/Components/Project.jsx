@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
 import React from "react";
-
 function Project({ title, image, description, techstack, previewLink, githubLink }) {
   return (
     <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900">
+      <motion.div
+        initial={{y : -200}}
+        whileInView={{ y: 0, opacity : 1}}
+        transition={{duration : 1}}
+        viewport={{once:false}}
+        className="overflow-hidden">
       <img src={image} alt="" loading="lazy" />
       <div className="dark:bg-dark-card p-4">
         <h1 className="dark:text-light-heading font-semibold text-lg pt-1">{title}</h1>
@@ -69,6 +75,8 @@ function Project({ title, image, description, techstack, previewLink, githubLink
           </div>
         </div>
       </div>
+      </motion.div>
+
     </article>
   );
 }
