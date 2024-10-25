@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/projectsShowCase/static/css/main.0e6117c4.css",
-    "main.js": "/projectsShowCase/static/js/main.b4f89109.js",
+    "main.css": "/projectsShowCase/static/css/main.d8634e43.css",
+    "main.js": "/projectsShowCase/static/js/main.de80a991.js",
     "static/media/docker.jpeg": "/projectsShowCase/static/media/docker.cf3d21db0ec6bb8a3192.jpeg",
     "static/media/revicons.eot": "/projectsShowCase/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/projectsShowCase/static/media/revicons.57fd05d4ae650374c8de.ttf",
@@ -11,11 +11,11 @@
     "static/media/slick.ttf": "/projectsShowCase/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/projectsShowCase/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/projectsShowCase/index.html",
-    "main.0e6117c4.css.map": "/projectsShowCase/static/css/main.0e6117c4.css.map",
-    "main.b4f89109.js.map": "/projectsShowCase/static/js/main.b4f89109.js.map"
+    "main.d8634e43.css.map": "/projectsShowCase/static/css/main.d8634e43.css.map",
+    "main.de80a991.js.map": "/projectsShowCase/static/js/main.de80a991.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e6117c4.css",
-    "static/js/main.b4f89109.js"
+    "static/css/main.d8634e43.css",
+    "static/js/main.de80a991.js"
   ]
 }
