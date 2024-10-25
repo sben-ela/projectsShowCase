@@ -1,8 +1,29 @@
+.react-multi-carousel-dot-list {
+  bottom: -20px; /* Adjust as needed to move dots further down */
+  position: relative;
+  z-index: 5; /* Make sure dots are behind the cards if necessary */
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+.react-multi-carousel-list {
+  padding: 0rem 0 2rem 0;
+  }
+  
+  .custom-dot-list-style button{
+  border: none;
+  background: rgb(255, 68, 68);
+  }
+  .react-multi-carousel-dot.react-multi-carousel-dot--active button{
+  background: rgb(255, 68, 68) !important;
+  }
+  
 .max-width {
   @apply lg:mx-auto lg:px-24 xl:px-48 px-5;
 }
@@ -25,3 +46,5 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
+

@@ -1,23 +1,18 @@
-import React, { useRef } from "react";
-import {
-  motion,
-  useMotionTemplate,
-  useMotionValue,
-  useSpring,
-} from "framer-motion";
+import React, { useRef } from 'react';
+import { motion, useMotionTemplate, useMotionValue, useSpring } from 'framer-motion';
 
-const ROTATION_RANGE = 60;
+const ROTATION_RANGE = 200;
 const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
 
-const ProjectCard = ({ title, image, onSeeMoreClick }) => {
+const ProjectCard = ({ title, imageSrc, description, extraContent, githubLink }) => {
   const ref = useRef(null);
-
+  
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-
+  
   const xSpring = useSpring(x);
   const ySpring = useSpring(y);
-
+  
   const transform = useMotionTemplate`rotateX(${xSpring}deg) rotateY(${ySpring}deg)`;
 
   const handleMouseMove = (e) => {
@@ -49,40 +44,33 @@ const ProjectCard = ({ title, image, onSeeMoreClick }) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{
-        transformStyle: "preserve-3d",
+        transformStyle: 'preserve-3d',
         transform,
-        backgroundImage: `url(${image})`, // Corrected syntax for backgroundImage
-        backgroundSize: "cover", // Ensure the image covers the entire card
-        backgroundPosition: "center", // Center the background image
       }}
-      className="relative bg-black h-96 w-72 rounded-xl shadow-lg"
+      className="bg-opacity-10 bg-white w-[355px] h-[500px] rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl relative group perspective-1000"
     >
-      <div
-        style={{
-          transform: "translateZ(75px)",
-          transformStyle: "preserve-3d",
-        }}
-        className="absolute group space-y-10 inset-4 grid place-content-center rounded-xl"
-      >
-        <div className="absolute h-full w-full inset-0 bg-slate-700 bg-opacity-40 blur-lg rounded-xl"></div>
+      <div className="h-[60%] overflow-hidden">
+        <img src={imageSrc} alt={title} className="w-full h-full object-cover rounded-b-xl" />
+      </div>
 
-        <p
-          style={{
-            transform: "translateZ(50px)",
-          }}
-          className="absolute right-0 z-10 p-4 -top-10 mr-8 rounded-xl text-4xl font-bold text-gray-100"
+      <div className="text-center mt-4">
+        <h2 className="text-xl font-semibold text-white">{title}</h2>
+      </div>
+
+      <div className="px-4 py-2 text-left">
+        <p className="text-sm text-gray-200">{description}</p>
+      </div>
+
+      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-black  p-4 h-[70%] transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out rounded-t-lg flex flex-col space-y-2 text-gray-300">
+        <p>{extraContent}</p>
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-gradient-to-r from-gray-400 to-gray-200 text-black py-2 px-4 rounded-lg shadow-md mt-2 hover:from-white hover:to-gray-400 transform transition-transform duration-300 hover:scale-105"
         >
-          {title}
-        </p>
-
-        <div className="absolute bottom-0 w-full flex justify-center items-center opacity-0 translate-y-20 group-hover:opacity-100 group-hover:-translate-y-10 transition-transform duration-500 ease-in-out">
-          <a
-            onClick={onSeeMoreClick}
-            className="border-2 w-40 font-serif text-center cursor-pointer group-hover:bg-gradient-to-tr hover:via-slate-300 from-slate-400 to-stone-800 bg-slate-200 text-xl border-black p-2 rounded-2xl"
-          >
-            See More
-          </a>
-        </div>
+          GitHub
+        </a>
       </div>
     </motion.div>
   );
