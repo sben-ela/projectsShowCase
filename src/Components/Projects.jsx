@@ -68,7 +68,7 @@ function Projects() {
   };
 
   return (
-    <div className="bg-gradient-to-bl flex items-center justify-center w-full h-[100vh] from-gray-800 to-gray-900">
+    <div className="bg-gradient-to-bl flex items-center justify-center w-100 h-full from-gray-800 to-gray-900">
       <div className="relative h-[80vh] w-[80vw] mt-64">
         <Slider  {...settings}>
           {projectDetails.map(
