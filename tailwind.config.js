@@ -2,8 +2,16 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        'custom-orange': '0 0 40px 4px rgba(255, 165, 0, 0.5)',
+      },
       fontFamily: {
+        DM: ["DM Sans", "sans-serif"],
         primary: "Poppins, sans-serif",
+        WetPaint: "Rubik Wet Paint",
+        DynaPuff : "DynaPuff",
+        Rubik : "Rubik"
+
       },
       colors: {
         "light-content": "#A7A7A7",
