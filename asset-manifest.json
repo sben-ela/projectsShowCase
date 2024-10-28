@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/projectsShowCase/static/css/main.20252bb9.css",
-    "main.js": "/projectsShowCase/static/js/main.2b0ce0ba.js",
+    "main.css": "/projectsShowCase/static/css/main.9c2c7d91.css",
+    "main.js": "/projectsShowCase/static/js/main.7ccedde8.js",
+    "static/media/notePad.jpg": "/projectsShowCase/static/media/notePad.ef2b481bb5a74b3df0b7.jpg",
     "static/media/project4.jpg": "/projectsShowCase/static/media/project4.7f7f813a8ef2d83ef5c5.jpg",
     "static/media/server.jpg": "/projectsShowCase/static/media/server.d99af0e1a172ac97a287.jpg",
+    "static/media/inception.jpg": "/projectsShowCase/static/media/inception.b3c21ea337bdea03b60c.jpg",
     "static/media/pingPong.jpg": "/projectsShowCase/static/media/pingPong.4950d0f22908ffd8032b.jpg",
-    "static/media/project2.jpg": "/projectsShowCase/static/media/project2.ab1f7074d374587aa234.jpg",
-    "static/media/project3.jpg": "/projectsShowCase/static/media/project3.d56d96757418e091dc70.jpg",
+    "static/media/market.jpg": "/projectsShowCase/static/media/market.97535e0617ffb218a547.jpg",
+    "static/media/byadeq.jpg": "/projectsShowCase/static/media/byadeq.3da204f979e362a040df.jpg",
     "static/media/revicons.eot": "/projectsShowCase/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/projectsShowCase/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/projectsShowCase/static/media/revicons.e8746a624ed098489406.woff",
@@ -15,11 +17,11 @@
     "static/media/slick.ttf": "/projectsShowCase/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/projectsShowCase/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/projectsShowCase/index.html",
-    "main.20252bb9.css.map": "/projectsShowCase/static/css/main.20252bb9.css.map",
-    "main.2b0ce0ba.js.map": "/projectsShowCase/static/js/main.2b0ce0ba.js.map"
+    "main.9c2c7d91.css.map": "/projectsShowCase/static/css/main.9c2c7d91.css.map",
+    "main.7ccedde8.js.map": "/projectsShowCase/static/js/main.7ccedde8.js.map"
   },
   "entrypoints": [
-    "static/css/main.20252bb9.css",
-    "static/js/main.2b0ce0ba.js"
+    "static/css/main.9c2c7d91.css",
+    "static/js/main.7ccedde8.js"
   ]
 }
