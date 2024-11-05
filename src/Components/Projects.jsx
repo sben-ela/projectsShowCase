@@ -10,14 +10,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 function Projects() {
   const [itemsInView, setItemsInView] = useState(3);
   const [activeSlide, setActiveSlide] = useState(0);
-
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 3000) {
         setItemsInView(5);
-      } else if (window.innerWidth >= 1024) {
+      } else if (window.innerWidth >= 1400) {
         setItemsInView(3);
-      } else if (window.innerWidth >= 800) {
+      } else if (window.innerWidth >= 600) {
         setItemsInView(2);
       } else {
         setItemsInView(1);
@@ -43,7 +42,6 @@ function Projects() {
   return (
     <div className="relative h-screen overflow-hidden bg-black">
       <div className="bg-black bg-opacity-60 absolute top-0 left-0 h-full w-full"></div>
-
       <AnimatePresence>
         <motion.div
           key={activeSlide} 
@@ -52,16 +50,16 @@ function Projects() {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
-          className="w-full h-[70vh] md:h-screen"
+          className="w-full h-screen md:h-screen"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
         >
-          <div className="absolute top-0 md:space-y-0 space-y-10 md:mt-0 left-5 md:left-20 h-full w-full md:w-1/3 flex flex-col md:justify-center p-5 md:p-10 font-primary">
+          <div className="absolute top-0 xl:space-y-0 space-y-10 md:mt-0 left-5 md:left-20 h-full w-full md:w-1/3 flex flex-col md:justify-center p-5 md:p-10 font-primary">
             <motion.p
               key={projectDetails[activeSlide].title} 
-              className="text-white font-bold text-3xl md:text-6xl w-full top-1/3 lg:absolute "
+              className="text-white font-bold text-3xl md:text-4xl w-full top-1/4 lg:absolute "
               initial={{ opacity: 0, x: -200, scale: 0.8 }} 
               animate={{ opacity: 1, x: 0, scale: 1 }}
               transition={{ duration: 0.5 }}
@@ -71,10 +69,10 @@ function Projects() {
 
             <motion.p
               key={projectDetails[activeSlide].description}
-              className="text-white rounded-lg text-sm md:text-xl w-full font-Rubik top-1/2 lg:absolute "
+              className="text-white rounded-lg text-sm md:text-xl w-full font-Rubik top-1/3 lg:absolute "
               initial={{ opacity: 0, x: -100 }} 
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
             >
               {projectDetails[activeSlide].description}
             </motion.p>
@@ -88,21 +86,20 @@ function Projects() {
                 scale: 1.1,
                 transition: { duration: 0.5 },
               }}
-              className="bottom-20 lg:absolute cursor-pointer text-white font-bold text-lg md:text-xl w-40 text-center border-2 rounded-2xl p-4 bg-gradient-to-tr from-purple-800 to-black"
+              className="bottom-20 lg:absolute cursor-pointer text-white font-bold text-lg md:text-xl w-40 text-center border-2 rounded-3xl p-4 bg-gradient-to-tr from-purple-800 to-black"
             >
               GitHub
             </motion.a>
           </div>
         </motion.div>
       </AnimatePresence>
-
-      <div className="absolute bottom-0 left-1/2 md:right-0 transform -translate-x-1/2 md:-translate-x-0 h-[28vh] md:h-[70vh] mb-96 md:mb-0 w-[70vw] md:w-[60vw]">
-      <Slider className="h-full" {...settings}>
+    <div className="absolute bottom-0 left-1/2 md:right-0 transform -translate-x-1/2 md:-translate-x-0 min-h-[40vh] md:min-h-[60vh] w-[70vw] md:w-[60vw] overflow-hidden">
+      <Slider className="h-full w-full" {...settings}>
           {projectDetails.map(
             ({ title, image, concepts, description, githubLink }, index) => (
               <div
                 key={title}
-                className={`my-20 mx-2   md:mx-10 h-full p-12 transition-transform duration-300 ${
+                className={`my-20 mx-2  md:mx-10 h-full p-12 transition-transform duration-300 ${
                   index === activeSlide ? 'scale-125' : ''
                 } ${
                   index - 1 === activeSlide ? 'scale-110 ' : ''
